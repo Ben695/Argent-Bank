@@ -1,72 +1,47 @@
-# Argent Bank API
+# Argent Bank - Interface Utilisateur
 
-This codebase contains the code needed to run the backend for Argent Bank.
+## Introduction
 
-## Getting Started
+Argent Bank est une application web moderne conçue pour offrir une expérience utilisateur optimale dans la gestion de comptes bancaires en ligne. Ce projet intègre une API back-end pour gérer l'authentification des utilisateurs, la récupération et la mise à jour des informations de profil, ainsi que la gestion des transactions.
 
-### Prerequisites
+## Démarrage Rapide
 
-Argent Bank uses the following tech stack:
+### Prérequis
 
-- [Node.js v12](https://nodejs.org/en/)
-- [MongoDB Community Server](https://www.mongodb.com/try/download/community)
+- Node.js v12 ou supérieur
+- MongoDB Community Server
+- Assurez-vous d'avoir installé et configuré l'API back-end d'Argent Bank suivant les instructions du [README de base](lien_vers_le_readme_du_backend).
 
-Please make sure you have the right versions and download both packages. You can verify this by using the following commands in your terminal:
+### Installation
 
-```bash
-# Check Node.js version
-node --version
+1. **Cloner le projet** : Clonez ce dépôt sur votre machine locale.
 
-# Check Mongo version
-mongo --version
-```
+    ```bash
+    git clone https://github.com/votre_username/argent-bank-ui.git
+    ```
 
-### Instructions
+2. **Installer les dépendances** : Naviguez dans le dossier du projet cloné et installez les dépendances nécessaires.
 
-1. Fork this repo
-1. Clone the repo onto your computer
-1. Open a terminal window in the cloned project
-1. Run the following commands:
+    ```bash
+    cd argent-bank-ui
+    npm install
+    ```
 
-```bash
-# Install dependencies
-npm install
+3. **Lancer l'application** : Démarrez l'application en mode développement.
 
-# Start local dev server
-npm run dev:server
+    ```bash
+    npm start
+    ```
 
-# Populate database with two users
-npm run populate-db
-```
+    L'application devrait maintenant être accessible à l'adresse [http://localhost:3000](http://localhost:3000).
 
-Your server should now be running at http://locahost:3001 and you will now have two users in your MongoDB database!
+## Fonctionnalités
 
-## Populated Database Data
+- **Authentification des Utilisateurs** : Connexion et déconnexion sécurisées avec gestion des sessions.
+- **Gestion du Profil Utilisateur** : Affichage et mise à jour des informations de profil (nom de l'utilisateur).
+- **Gestion des Transactions** : Analyse et spécification des endpoints nécessaires pour intégrer les fonctionnalités de transactions à venir.
 
-Once you run the `populate-db` script, you should have two users in your database:
+## Documentation de l'API
 
-### Tony Stark
+Pour plus d'informations sur le fonctionnement de l'API, une fois que vous avez démarré votre environnement local, vous pouvez visiter : [http://localhost:3001/api-docs](http://localhost:3001/api-docs).
 
-- First Name: `Tony`
-- Last Name: `Stark`
-- Email: `tony@stark.com`
-- Password: `password123`
-
-### Steve Rogers
-
-- First Name: `Steve`,
-- Last Name: `Rogers`,
-- Email: `steve@rogers.com`,
-- Password: `password456`
-
-## API Documentation
-
-To learn more about how the API works, once you have started your local environment, you can visit: http://localhost:3001/api-docs
-
-## Design Assets
-
-Static HTML and CSS has been created for most of the site and is located in: `/designs`.
-
-For some of the dynamic features, like toggling user editing, there is a mock-up for it in `/designs/wireframes/edit-user-name.png`.
-
-And for the API model that you will be proposing for transactitons, the wireframe can be found in `/designs/wireframes/transactions.png`.
